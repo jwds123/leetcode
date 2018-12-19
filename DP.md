@@ -2,7 +2,7 @@
 ## 递归
 
 长度
-```
+```python
 def recursive_lcs(str_a, str_b):
     if len(str_a) == 0 or len(str_b) == 0:
         return 0
@@ -13,7 +13,7 @@ def recursive_lcs(str_a, str_b):
 ```
 
 序列
-```
+```python
 def lcs(A,B):
     if A=='' or B=='':
         return ''
@@ -30,7 +30,7 @@ def lcs(A,B):
 ## 迭代
 
 长度
-```
+```python
 def lcs_dp(A,B):
     '''
     做个列表，A是行，B是列
