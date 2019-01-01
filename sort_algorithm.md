@@ -1,6 +1,6 @@
 # bubble
 
-```
+```python
 def bubble_sort(nums):
     for i in range(1,len(nums)):
         for j in range(1,len(nums)-i):
@@ -11,7 +11,7 @@ def bubble_sort(nums):
 
 # selection
 
-```
+```python
 def selection_sort(nums):
     for i in range(len(nums)-1):
         minIndex=i#前i个最小值
@@ -25,7 +25,7 @@ def selection_sort(nums):
 
 # insert
 
-```
+```python
 def insert_sort(nums):
     for i in range(len(nums)):
         preIndex=i-1
@@ -45,7 +45,7 @@ def insert_sort(nums):
 
 # merge
 
-```
+```python
 '''
 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；
 设定两个指针，最初位置分别为两个已经排序序列的起始位置；
