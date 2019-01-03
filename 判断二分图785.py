@@ -3,7 +3,7 @@ import numpy as np
 class Solution(object):
     def isBipartite(self, graph):
         """
-        BFS
+        BFS 72ms 50%
         """
         #已经访问过的只能是两种颜色/两种集合，有边的分属两个集合
         visited = [0] * len(graph)# 0-not visited; 1-blue; 2-red;
@@ -27,7 +27,7 @@ class Solution(object):
 
     def isBipartite2(self, graph):
         """
-        BFS
+        DFS 50ms 100%
         """
         #已经访问过的只能是两种颜色/两种集合，有边的分属两个集合
         visited = [0] * len(graph)# 0-not visited; 1-blue; 2-red;
