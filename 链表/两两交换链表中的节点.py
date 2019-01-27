@@ -25,6 +25,7 @@ class Solution(object):
             first=first.next
             second=first.next if first else None
         return dummy.next
+
     def print_node(self,node):
         node_list=[]
         while node:
