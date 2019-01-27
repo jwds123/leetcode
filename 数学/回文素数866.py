@@ -2,7 +2,7 @@
 求出大于或等于 N 的最小回文素数。
 '''
 
-import math
+import m
 class Solution(object):
     def primePalindrome(self, N):
         """
@@ -78,7 +78,7 @@ class Solution(object):
     #素数
     def isPrime(self,num):
         i=5
-        while i<=math.sqrt(num):
+        while i<=m.sqrt(num):
             #i=6k+1  or  6k+5  i+2=6k+7=6(k+1)+1
             if num%i==0 or num%(i+2)==0:
                 return False

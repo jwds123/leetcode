@@ -101,7 +101,7 @@ def quick_sort(nums,l=None,r=None):
     l = 0 if not isinstance(l,(int, float)) else l
     r = len(array)-1 if not isinstance(r,(int, float)) else r
     if l<r:
-        keyIndex=partition(nums,l,r)
+        keyIndex=partition1(nums,l,r)
         #先左后右
         quick_sort(nums,l,keyIndex)
         quick_sort(nums,keyIndex+1,r)
