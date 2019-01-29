@@ -20,10 +20,10 @@ class Solution(object):
         first_buy, first_sell, second_buy, second_sell = -sys.maxsize, 0, -sys.maxsize, 0
         #print(sys.maxsize)
         for price in prices:
-            first_buy = max(first_buy, -price)  # 该天是第一次买入的最大收益
-            first_sell = max(first_sell, price + first_buy)  # 在该天第一次卖出的最大收益
-            second_buy = max(second_buy, first_sell - price)  # 该天属于第二次买入的最大收益：
-            second_sell = max(second_sell, price + second_buy)  # 第二次卖出手上的股票
+            first_buy = max(first_buy, -price)  # 该天属于第一次买入所实现的最大收益
+            first_sell = max(first_sell, price + first_buy)  # 该天属于第一次卖出所实现的最大收益
+            second_buy = max(second_buy, first_sell - price)  # 该天属于第二次买入，所实现的最大收益：
+            second_sell = max(second_sell, price + second_buy)  # 该天属于第二次卖出所实现的最大收益
             #print(price,first_buy,first_sell,second_buy,second_sell)
         return second_sell
 
